@@ -1,12 +1,206 @@
-nav{
+body{
+    background-color:white;
+    margin: 20px;
+    font-size: 25px;
+    font-family:'Geneva';
+}
+nav li{
+    position:relative;
+    text-align: center;
+    display: inline-block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+	padding:2px;
+	width:25%;
+	border:1px solid black;
+	width: 20%;
+}
+.skip-link{
+    color:black;
+    font-weight: bold;
+}
+#main p{
+    line-height: 35px;
     text-align: center;
 }
 
-nav li{
-    display:inline-block;
-    
+a{
+    color:white;
+    text-decoration: none;
     
 }
-h1{
+.active a{
+    font-size: 40px;
+    font-weight: bold;
+    color: goldenrod;
+    text-decoration: underline;
+}
+a:hover{
+    color:goldenrod;
+}
+a:focus{
+    color:goldenrod;
+}
+nav{
+    background-color: black;
+    color:white;
     text-align: center;
+    margin-bottom: 10px;
+}
+main{
+    margin-top: 40px;
+}
+
+
+title{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: brown;
+}
+h1{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+footer{
+    display: block;
+    margin-top: 300px;
+    padding: 10px;
+    border: solid 5px black;
+}
+
+.QB figcaption{
+    font-size: 20px;
+    text-align: center;
+}
+.QB{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pictures{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+@media only screen and (min-width: 600px) {
+    .QB{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+
+    }
+    .QB img{
+        margin-right: 30px;
+        margin-left: 30px;
+
+    }
+    
+}
+@media only screen and (min-width: 850px) {
+    .QB{
+        justify-content: space-evenly;
+    
+    }
+    .QB img{
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+    
+}
+.NBA{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.NBA figure{
+    grid-column: 2/3;
+    grid-row: inherit;
+
+}
+.NBA figcaption{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .NBA{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+    #GA{
+        grid-column: 1/2;
+    }
+    #KD{
+        grid-column: 1/2;
+    }
+    #NJ{
+        grid-column: 1/2;
+    }
+    #LJ{
+        grid-column: 1/2;
+    }
+    #KL{
+        grid-column: 1/2;
+    }
+    .NBA figure{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+}
+@media only screen and (min-width: 850px) {
+    .NBA{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    }
+    #GA{
+        grid-column: 1/2;
+    }
+    #KD{
+        grid-column: 3/4;
+    }
+    #JE{
+        grid-column: 1/2;
+    }
+    #NJ{
+        grid-column: 2/3;
+    }
+    #LD{
+        grid-column: 3/4;
+    }
+    #LJ{
+        grid-column: 1/2;
+    }
+    #KL{
+        grid-column: 3/4;
+    }
+    .NBA figure{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 }

@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-	<!-- You do not need to make any changes to this file, but
-	you should still review the tags to make sure that you
-	are familiar with them. -->
-
 <html lang="en">
-<!-- All of the meta data for the page belongs in the header tag -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Link to the favicon image -->
 	<link rel="icon" href="images/favicon.ico">
-	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
-	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
-	<title>My Top 10 NBA Players</title>
+	
 </head>
 
-<!-- All of the visible code in the page belongs in the body tag -->
+
 <body>
-	<!-- Header is a sematic tag page that aids readability -->
-	<header>
-		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav>
-			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
+	<nav>
+		<ul>
 				<li><a href = "index.html" >Home</a></li>
-				<li class="active"><a href = "basketball.html">My Top 10 NBA Players</a></li>
-				<li><a href = "football.html">My Top 10 QB's</a></li>
-				
-			</ul>
-		</nav>
-		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1>Here is my ranking!</h1>
+				<li class="active"><a href = "basketball.html">NBA List</a></li>
+				<li><a href = "football.html">NFL QB List</a></li>
+		</ul>
+	</nav>
+	<header>
+		<a class="skip-link" href='#main'>Skip to main content</a>
+		<title>My Top 10 NBA Players</title>
+		<h1>A list based on both regular season and postseason performance</h1>
 	</header>
-
-	<!-- Every page should have a main tag for accessibility -->
-	<main>
-		<p>
-		</p>
+	
+	<main id = "main">
+		<div class="NBA">
+			<figure id = "GA"><img src="images/greek.jpeg" alt="Giannis Antetokounmpo dribbling" height ="300" width="500" /> <figcaption id = "GA2" tabindex ="0">1. Giannis Antetokounmpo - Milwaukee Bucks</figcaption>
+			</figure>
+			<figure id = "SC"><img src="images/steph.jpeg" alt="Stephen Curry is excited" height ="300" width="500" /> <figcaption id = "SC2" tabindex ="0">2. Stephen Curry - Golden State Warriors</figcaption>
+			</figure>
+	
+			<figure id = "KD"><img src="images/kd.jpeg" alt="Kevin Durant is looking up" height ="300" width="500"/> <figcaption id = "KD2" tabindex ="0">3. Kevin Durant - Phoenix Suns</figcaption>
+			</figure>
+			<figure id = "JE"><img src="images/embiid.jpeg" alt="Joel Embiid" height ="300" width="500" /> <figcaption  id = "JE2" tabindex ="0">4. Joel Embiid - Philadelphia 76ers</figcaption>
+			</figure>
+			<figure id = "NJ"><img src="images/jokic.jpeg" alt="Nikola Jokic shooting" height ="300" width="500" /> <figcaption id = "NJ2" tabindex ="0">5. Nikola Jokic - Denver Nuggets</figcaption>
+			</figure>
+			<figure id = "LD"><img src="images/luka.jpeg" alt="Luka Doncic is happy" height ="300" width="500" /> <figcaption id = "LD2" tabindex ="0">6. Luka Doncic - Dallas Mavericks</figcaption>
+			</figure>
+			<figure id = "LJ"><img src="images/lebron.jpeg" alt="Lebron James dribbling" height ="300" width="500" /> <figcaption id = "LJ2" tabindex ="0">7. Lebron James - LA Lakers</figcaption>
+			</figure>
+			<figure id = "JT"><img src="images/tatum.jpeg" alt="Jayson Tatum hyped" height ="300" width="500"/> <figcaption id = "JT2" tabindex ="0">8. Jayson Tatum - Boston Celtics</figcaption>
+			</figure>
+			<figure id = "KL"><img src="images/kawhi.jpeg" alt="Kawhi Leonard looking around" height ="300" width="500" /> <figcaption id = "KL2" tabindex ="0">9. Kawhi Leonard - LA Clippers</figcaption>
+			</figure>
+			<figure id = "AD"><img src="images/ada.jpeg" alt="Anthony Davis dribbling" height ="300" width="500" /> <figcaption id = "AD2" tabindex ="0">10. Anthony Davis - LA Lakers</figcaption>
+			</figure>
+		
 	</main>
-
-	<!-- Footer is a sematic tag page that aids readability -->
-	<footer>
+	<footer tabindex = "0">
 		<p>Blog by Rishab Lanka</p>
 	</footer>
+	<script src = "js/nba.js"></script>
 </body>
 </html>

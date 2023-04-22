@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-	<!-- You do not need to make any changes to this file, but
-	you should still review the tags to make sure that you
-	are familiar with them. -->
-
 <html lang="en">
-<!-- All of the meta data for the page belongs in the header tag -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Link to the favicon image -->
 	<link rel="icon" href="images/favicon.ico">
-	<!-- Link to the reset file -->
 	<link rel="stylesheet" href="css/html5reset.css">
-	<!-- Link to the stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
-	<title>My Top 10 NFL Quarter Backs</title>
+	
 </head>
 
-<!-- All of the visible code in the page belongs in the body tag -->
+
 <body>
-	<!-- Header is a sematic tag page that aids readability -->
-	<header>
-		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav>
-			<ul>
-				<!-- Since I am on the index file I added class = action to the link to index. -->
+	<nav>
+		<ul>
 				<li><a href = "index.html" >Home</a></li>
-				<li><a href = "basketball.html">My Top 10 NBA Players</a></li>
-				<li class="active"><a href = "football.html">My Top 10 QB's</a></li>
-				
-			</ul>
-		</nav>
-		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1>Here is my ranking!</h1>
+				<li><a href = "basketball.html">NBA List</a></li>
+				<li class="active"><a href = "football.html">NFL QB List</a></li>
+		</ul>
+	</nav>
+	<header>
+		<a class="skip-link" href='#main'>Skip to main content</a>
+		<title>My Top 10 NFL QBs</title>
+		<h1>A list based on both regular season and postseason performance</h1>
 	</header>
-
-	<!-- Every page should have a main tag for accessibility -->
-	<main>
-		<p>
-		</p>
+	
+	<main id = "main">
+		<div class="QB">
+			<figure><img src="images/pattym.jpeg" alt="Patrick Mahomes trying to throw" height ="300" width="500" /> <figcaption id = "PM" tabindex ="0">1. Patrick Mahomes - Kansas City Chiefs</figcaption>
+			</figure>
+			<figure><img src="images/burrow.jpeg" alt="Joe Burrow dropping back" height ="300" width="500" /> <figcaption id = "JB" tabindex ="0">2. Joe Burrow - Cincinnati Bengals</figcaption>
+			</figure>
+	
+			<figure><img src="images/jallen.jpg" alt="Josh Allen raising his hands" height ="300" width="500"/> <figcaption id = "JA" tabindex ="0">3. Josh Allen - Buffalo Bills</figcaption>
+			</figure>
+			<figure><img src="images/herbert.jpg" alt="Justin Herbert throwing" height ="300" width="500" /> <figcaption id = "JH" tabindex ="0">4. Justin Herbert - LA Chargers</figcaption>
+			</figure>
+			<figure><img src="images/arod.jpeg" alt="Aaron Rodgers pointing" height ="300" width="500" /> <figcaption id = "AR" tabindex ="0">5. Aaron Rodgers - Green Bay Packers</figcaption>
+			</figure>
+			<figure><img src="images/ljack.jpg" alt="Lamar Jackson throwing" height ="300" width="500" /> <figcaption id = "LA" tabindex ="0">6. Lamar Jackson - Baltimore Ravens</figcaption>
+			</figure>
+			<figure><img src="images/jalen.jpeg" alt="Jalen Hurts is hyped" height ="300" width="500" /> <figcaption id = "HU" tabindex ="0">7. Jalen Hurts - Philadelphia Eagles</figcaption>
+			</figure>
+			<figure><img src="images/tlaw.jpeg" alt="Trevor is running" height ="300" width="500"/> <figcaption id = "TL" tabindex ="0">8. Trevor Lawrence - Jacksonville Jaguars</figcaption>
+			</figure>
+			<figure><img src="images/mattstafford.jpeg" alt="Stafford looking" height ="300" width="500" /> <figcaption id = "MS" tabindex ="0">9. Matthew Stafford - LA Rams</figcaption>
+			</figure>
+			<figure><img src="images/dakp.jpeg" alt="Dak is excited" height ="300" width="500" /> <figcaption id = "DP" tabindex ="0">10. Dak Prescott - Dallas Cowboys</figcaption>
+			</figure>
+		
 	</main>
-
-	<!-- Footer is a sematic tag page that aids readability -->
-	<footer>
+	<footer tabindex = "0">
 		<p>Blog by Rishab Lanka</p>
 	</footer>
+	<script src = "js/nfl.js"></script>
 </body>
 </html>
